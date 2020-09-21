@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Teenage Kicks</title>
+	<meta name="author" content="Jack Gray">
+	<meta name="description" content="Teenage Kicks - the latest trendy footwear.">
+	<meta name="keywords" content="kicks,shoes,footwear">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<script src="index.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<button class="hamburger">
+			<i class="fas fa-bars"></i>
+		</button>
+		<div class="logo">
+			<i class="fas fa-shoe-prints"></i>
+			<h1>Teenage Kicks</h1>
+			<p>Find the right fit for you</p>
+		</div>
+		<button class="phone">
+			<i class="fas fa-phone"></i>
+		</button>
+	</header>
+
+	<div class="carousel-container">
+		<div id="carousel" class="carousel">
+			<div class="slide" data-bg="#cb021c" data-light="false">
+				<img src="img/shoe-1.png" alt="red shoe" />
+				<h2>Performance</h2>
+				<button>Learn More</button>
+			</div>
+			<div class="slide slide-light" data-bg="#ffffff" data-light="true">
+				<img src="img/shoe-2.png" alt="black shoe" />
+				<h2>Comfort</h2>
+				<button>Learn More</button>
+			</div>
+			<div class="slide" data-bg="#2d9ebb" data-light="false">
+				<img src="img/shoe-3.png" alt="blue shoe" />
+				<h2>Style</h2>
+				<button>Learn More</button>
+			</div>
+			<div class="slide" data-bg="#5c9e1a" data-light="false">
+				<img src="img/shoe-4.png" alt="green shoe" />
+				<h2>Design</h2>
+				<button>Learn More</button>
+			</div>
+		</div>
+		<button id="left" class="arrow arrow-left">
+			<i class="fas fa-chevron-left"></i>
+		</button>
+		<button id="right" class="arrow arrow-right">
+			<i class="fas fa-chevron-right"></i>
+		</button>
+		<div class="progress"></div>
+	</div>
+</body>
+
+</html>

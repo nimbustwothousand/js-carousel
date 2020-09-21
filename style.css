@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	background-color: #cb021c;
+	transition: background .4s ease-in-out;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+button {
+	background-color: transparent;
+	outline: 0;
+	border: none;
+	cursor: pointer;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	margin-bottom: 1rem;;
+}
+header button {
+	margin-bottom: auto;
+}
+.hamburger {
+	font-size: 2rem;;
+}
+.phone {
+	font-size: 2rem;;
+}
+.logo {
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+}
+.logo i {
+	font-size: 2rem;
+}
+.logo p {
+	color: black;
+}
+.carousel-container {
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+	height: 60vh;
+}
+.carousel {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(0);
+	transition: transform .4s ease-in-out;
+	display: flex;
+	height: 100%;
+}
+.slide {
+	color: white;
+	width: 100vw;
+	text-align: center;
+	height: 100%;
+}
+.slide-light {
+	color: black;
+}
+.slide img {
+	object-fit: cover;
+	height: 300px;
+	width: 300px;
+}
+@media screen and (min-width: 700px) {
+	.slide img {
+		height: 400px;
+		width:400px;
+	}
+}
+.slide h2 {
+	font-size: 2rem;
+	letter-spacing: .2rem;
+	margin: -2rem auto 1rem auto;
+}
+@media screen and (min-width: 700px) {
+	.slide h2 {
+		font-size: 4rem;
+		margin-top: -5rem;
+	}
+}
+.slide button {
+	padding: .5rem 1rem;
+	font-size: 1rem;
+	color: white;
+	background-color: rgba(20, 20, 20, .8);
+	border-radius: 2px;
+}
+@media screen and (min-width: 700px) {
+	.slide button {
+		padding: .5rem 2rem;
+		font-size: 1.5rem;
+	}
+}
+button.arrow {
+	padding: 1rem;
+	font-size: 3rem;
+	color: black;
+	opacity: .5;
+	background-color: transparent;
+	position: absolute;
+	top: 60%;
+	transform: translateY(-50%);
+}
+@media screen and (min-width: 700px) {
+	button.arrow {
+		top: 70%
+	}
+}
+.arrow-left {
+	left: .5rem;
+}
+.arrow-right {
+	right: .5rem;
+}
